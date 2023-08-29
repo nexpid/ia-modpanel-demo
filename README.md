@@ -3,7 +3,7 @@
 </h1>
 
 > **Note**
-> The `modpanel-game` doesn't contain any scripts yet
+> The `modpanel-game` folder doesn't contain any scripts yet
 
 This is a demo to showcase how a theoretical modpanel for Item Asylum could look like, the `base-game` and `modpanel-game` folders contain scripts that should be synced to Roblox using [Rojo](https://rojo.space)  
 The two games communicate using a DataStore and MessagingService
