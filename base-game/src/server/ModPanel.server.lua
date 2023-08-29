@@ -9,10 +9,10 @@ type PlayerData = {
 type ServerData = {
 	players: { PlayerData },
 	round: {
-		playing: boolean,
+		ingame: boolean,
 		map: string,
 		mode: string,
-		startedPlayingAt: boolean,
+		loadedAt: boolean,
 	},
 }
 
@@ -35,6 +35,12 @@ local players: { [Player]: PlayerData } = {}
 local function grabData(): ServerData
 	local data: ServerData = {
 		players = {},
+		round = {
+			ingame = false,
+			map = "cool_map",
+			mode = "lobby",
+			loadedAt = 0,
+		},
 	}
 	for _, x in pairs(players) do
 		data.players[#data.players + 1] = x
